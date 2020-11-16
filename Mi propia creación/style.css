@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {background-color: cyan;}
+header > h1 {color: #00205b ;text-align: center;}
+
+nav { background-color:#009f4d;padding: 20px;}
+nav > a {border: black;
+    margin-top:100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    border: black 5px solid;
+    padding: 10px;
+}
+nav > a:hover {color: yellow;}
+main {padding: auto;}
+.div1 {border: 5px  red solid;
+    background-color: lightblue;    
+    text-align: left;
+    padding: 50px;
+}
+
+ .div2 {border: 5px black solid;
+        padding: 50px;
+        background-color: lightblue;    
+        text-align: right;}

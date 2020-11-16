@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilo general para las versiones de móviles  */ 
+
+header, aside, nav {
+    width: 100%;
+    height: 50px;
+}
+
+footer {
+    display: none;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 50px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+/* Versiones para table */
+@media( min-width: 400px) and(max-width: 767px)  {
+        header{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 25%;
+    }
+    
+    nav {
+        background-color: grey;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 50px;
+    }
+
+    aside{
+        position: fixed;
+        top: 50px;
+        width: 25%;
+        min-height: calc(100vh - 50px);
+        background-color: coral;
+        overflow: auto;
+    }
+
+    main{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 75%;
+        min-height: calc(100vh - 50px);
+        padding-bottom: 0;
+        background-color: khaki;
+    }
+}
+@media( min-width: 768px){
+    main {background-color: saddlebrown;
+        min-width: 75%;
+        width: calc(100vw - 200px - 15%);
+        position: absolute;
+        top: 50px;
+        right: 15%;
+        height: calc(100vh - 100px);
+
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow: auto;
+        width: 25%;
+        max-width: 200px;
+        background-color: salmon;
+
+    }
+    nav {position: absolute;
+        top: 50px;
+        right: 0;
+        width: 15%;
+        min-height: calc(100vh - 100px);
+    }
+    header {
+        min-width: 75%;
+        width: calc(100vw - 200px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50px;
+    }
+    footer {
+        display: block;
+        position: absolute;
+        width: calc(100vw - 200px);
+        bottom: 0;
+        right: 0;
+        background-color: seagreen;
+        height: 50px;
+    }
+}
