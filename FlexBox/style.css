@@ -1,0 +1,29 @@
+body{
+
+    background-color: blue;
+}
+nav div {
+
+    width: 100px;
+    background-color: tomato;
+    text-align: center;
+    border-style: solid;
+
+}
+nav{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div:hover{
+
+    background-color: yellow
+
+}
+div{
+
+    transition-duration: 150ms;
+    transition-delay: 100ms;
+}
